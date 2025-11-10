@@ -51,7 +51,8 @@ class CreateCampaignTest extends BaseClass {
 		wLib.waitUntilElementToBeVisible(driver, toastMsg);
 		String msg = toastMsg.getText();
 		homepage.getCloseToastMsg().click();
-		Assert.assertTrue(msg.contains(TOAST_MSG_VERIFICATION));	
+		Assert.assertTrue(msg.contains(TOAST_MSG_VERIFICATION));
+		System.out.println("hello");
 
 	}
 
