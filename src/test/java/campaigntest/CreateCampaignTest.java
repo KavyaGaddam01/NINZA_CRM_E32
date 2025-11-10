@@ -52,7 +52,7 @@ class CreateCampaignTest extends BaseClass {
 		String msg = toastMsg.getText();
 		homepage.getCloseToastMsg().click();
 		Assert.assertTrue(msg.contains(TOAST_MSG_VERIFICATION));
-		System.out.println("hello");
+		System.out.println("Hello");
 
 	}
 
