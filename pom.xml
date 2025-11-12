@@ -74,7 +74,7 @@
 						<version>3.5.4</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>Smoke.xml</suiteXmlFile>
+								<suiteXmlFile>SmokeSuite.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -91,7 +91,7 @@
 						<version>3.5.4</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>Regression.xml</suiteXmlFile>
+								<suiteXmlFile>RegressionSuite.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
