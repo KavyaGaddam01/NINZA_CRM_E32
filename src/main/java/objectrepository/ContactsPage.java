@@ -14,7 +14,7 @@ public class ContactsPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//span[text()='Create Contact']")
+	@FindBy(className  = "material-icons")
 	private WebElement addCreateContactBtn;
 
 	public WebElement getAddCreateContactBtn() {

@@ -13,7 +13,7 @@ public class CampaignsPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//span[text()='Create Campaign']")
+	@FindBy(className = "material-icons")
 	private WebElement addcreateCampaignBtn;
 
 	public WebElement getAddcreateCampaignBtn() {
