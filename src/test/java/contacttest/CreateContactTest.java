@@ -29,7 +29,7 @@ import objectrepository.SelectCampaignPage;
 public class CreateContactTest extends BaseClass{
 
 	@Test(groups = {"smoke","regression"})
-	public void createContactWithMandatoryFieldsTest() throws EncryptedDocumentException, IOException {
+	public void createContactWithMandatoryFieldsTest() throws EncryptedDocumentException, IOException, InterruptedException {
 		String CAMPAIGN_NAME = eLib.readDataFromExcelFile("Contacts", 1, 2);
 		String TARGET_SIZE = eLib.readDataFromExcelFile("Contacts", 1, 3);
 		String ORGANIZATION = eLib.readDataFromExcelFile("Contacts", 1, 4);
@@ -40,6 +40,7 @@ public class CreateContactTest extends BaseClass{
 		String TOAST_MSG_VERIFICATION = eLib.readDataFromExcelFile("Contacts", 1, 10);
 
 		// Create Campaign
+		Thread.sleep(2000);
 		CampaignsPage campaignsPage = new CampaignsPage(driver);
 		campaignsPage.getAddcreateCampaignBtn().click();
 		CreateCampaignPage createCampaignPage = new CreateCampaignPage(driver);
